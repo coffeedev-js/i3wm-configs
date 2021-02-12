@@ -21,6 +21,10 @@
 
 3. NVIDIAs proprietary drivers are quite good, however i've noticed weird behaviour when trying to use PBP on ultra wide monitors and or in general trying to get a second monitor to work >Where both signals come from two different graphics cards<. In that case use "noveau" the open source driver solution. However, after the entire process of the GPU passthrough, i noticed another weird behaviour but with the noveau drivers this time. When using PBP mode for Host and Guest on an ultra wide, ubuntu just blackscreened when turning PBP off. The hiogher resolutions weren't recognized either. After installing the proprietary drivers however, the problem was solved. Since you are going to isolate one of the cards anyway, the first problem should'nt be a problem anymore.
 
+4. Firefox on Linux by default has disabled scrolling through click on the mosuewheel, to enable go to
+-about:config in Firefox
+-search for "scroll" in the filter and set "middlemouse.scrollbarPosition" to true
+
 1. Install i3wm-gaps preferably
 add-apt-repository ppa:kgilmer/speed-ricer
 apt-get update
