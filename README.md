@@ -19,6 +19,9 @@ apt intsall i3-gaps
 https://github.com/teejee2008/timeshift
 It's your guardian angel should it work
 
+1.2 Install arandr (gui for xrandr)
+apt-get install arandr
+
 2. Install the ttf fonts
 
 3. For laptops, get brightnessctl to change display brightness
@@ -76,8 +79,8 @@ sudo nvidia-xconfig --cool-bits=4
 16. There is currently no Github desktop for Linux, but shiftkey has an absolute epic fork for Linux
 https://github.com/shiftkey/desktop
 
-///////////////////////////////////////////////////////
-//Speed GPU passthrough summary for maximum fastness //
+
+Speed GPU passthrough summary for maximum fastness
 ///////////////////////////////////////////////////////
 
 >Requires IOMMU compatable hardware
