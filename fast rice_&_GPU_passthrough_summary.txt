@@ -72,9 +72,16 @@ apt-get install mpv
 9. youtube-dl
 https://github.com/ytdl-org/youtube-dl
 
-10. Compton (Compositor) a must have!
+10.a Compton (Compositor) a must have!
 apt-get install compton
 apt-get install compton-conf (for painless gui configuration experience)
+
+OR
+
+10.b Picom (Fork of Compton that allows blur)
+-Make: https://github.com/yshui/picom
+-Create directory .config/picom
+-Shove the dotfile for picom into the directory
 
 11. Kitty Terminal emulator, lightweight & fast terminal emulator
 apt-get install kitty
