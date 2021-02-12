@@ -39,6 +39,9 @@ apt-get install lxappearance
 1.4 Get a top, like htop, vtop etc.
 https://github.com/MrRio/vtop
 
+1.5 Get flameshot, a cool screenshot terminal based/gui tool
+apt-get install flameshot
+
 2. Install the ttf fonts
 
 3. For laptops, get brightnessctl to change display brightness
