@@ -10,6 +10,17 @@
 //Quick summary for fast-ricing your epic desktop    //
 ///////////////////////////////////////////////////////
 
+-Good to knwows-
+1.If you need the class of a window for your i3 config
+-In terminal, type "xprop"
+-click on desired window
+-Search for the WM CLASS and always take the second
+(For Example -> Firefox WebDev is set as "navigator" first, then as "Fire Fox Webdeveloper" Which destincts of from normal FireFox)
+
+2.The default display manager in ubuntu is "gdm3", however you can change and activate another one like lighDM
+
+3. NVIDIAs proprietary drivers are quite good, however i've noticed weird behaviour when trying to use PBP on ultra wide monitors and or in general trying to get a second monitor to work >Where both signals come from two different graphics cards<. In that case use "noveau" the open source driver solution. However, after the entire process of the GPU passthrough, i noticed another weird behaviour but with the noveau drivers this time. When using PBP mode for Host and Guest on an ultra wide, ubuntu just blackscreened when turning PBP off. The hiogher resolutions weren't recognized either. After installing the proprietary drivers however, the problem was solved. Since you are going to isolate one of the cards anyway, the first problem should'nt be a problem anymore.
+
 1. Install i3wm-gaps preferably
 add-apt-repository ppa:kgilmer/speed-ricer
 apt-get update
@@ -21,6 +32,12 @@ It's your guardian angel should it work
 
 1.2 Install arandr (gui for xrandr)
 apt-get install arandr
+
+1.3 install lxappearance (GTK Theme managaer)
+apt-get install lxappearance
+
+1.4 Get a top, like htop, vtop etc.
+https://github.com/MrRio/vtop
 
 2. Install the ttf fonts
 
@@ -80,8 +97,7 @@ sudo nvidia-xconfig --cool-bits=4
 https://github.com/shiftkey/desktop
 
 
-Speed GPU passthrough summary for maximum fastness
-///////////////////////////////////////////////////////
+/////////////////////////Speed GPU passthrough summary for maximum fastness//////////////////////////////
 
 >Requires IOMMU compatable hardware
 >Requires hardware that utilizes AMD/Intel virtualisation
@@ -94,6 +110,8 @@ Speed GPU passthrough summary for maximum fastness
 Prereqs:
 -Enable virtualisiation in your UEFI
 -Enable IOMMU in your UEFI
+-Protip: In a B450-f Ausus ROG motherboard it's hidden under:
+Advanced/AMD CBS/NBIO-Common Options/IOMMU
 
 1.Get the emulation necessities
 apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf
