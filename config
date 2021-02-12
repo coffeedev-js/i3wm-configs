@@ -215,7 +215,7 @@ for_window [class=".*"] border pixel 0
 gaps inner 10
 gaps outer 10
 
-exec_always feh --bg-scale  /home/coffee/Pictures/beansbg.png
-exec_always compton
+exec_always feh --bg-scale  /home/coffee/Pictures/coffee.png
+exec_always picom --experimental-backends
 bindsym $mod+y exec i3lock
 #-i ~/Pictures/lockscreen.png
