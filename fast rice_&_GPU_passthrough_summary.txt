@@ -83,6 +83,9 @@ OR
 -Create directory .config/picom
 -Shove the dotfile for picom into the directory
 
+10.b For founded Corners use Jonaburgs' fork:
+https://github.com/jonaburg/picom
+
 11. Kitty Terminal emulator, lightweight & fast terminal emulator
 apt-get install kitty
 
