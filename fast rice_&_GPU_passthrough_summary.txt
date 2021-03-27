@@ -10,7 +10,7 @@
 //Quick summary for fast-ricing your epic desktop    //
 ///////////////////////////////////////////////////////
 
--Good to knwows-
+-Good to knows-
 1.If you need the class of a window for your i3 config
 -In terminal, type "xprop"
 -click on desired window
