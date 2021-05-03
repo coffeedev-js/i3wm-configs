@@ -176,7 +176,7 @@ NOTICE: The card which ID got written down won't be aviable for the Host system 
 
 <hyperv>
   <vendor_id state='on' value='whatever'/>
-<hyperv>
+</hyperv>
 
 -Paste it after the
 
@@ -188,6 +188,16 @@ Then copy and paste following XML right after the hyperv tags
 
 <kvm>
 <hidden state='on'/>
+</kvm>
+-In the end, it should look like this:
+
+<acpi/>
+<apic/>
+<hyperv>
+  <vendor_id state='on' value='whatever'/>
+</hyperv>
+<kvm>
+  <hidden state='on'/>
 </kvm>
 
 -Save the file and start the VM, you should be ready to go.
