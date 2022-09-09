@@ -10,6 +10,7 @@
 //Quick summary for fast-ricing your epic desktop    //
 ///////////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////////
 -Good to knows-
 1.If you need the class of a window for your i3 config
 -In terminal, type "xprop"
@@ -25,6 +26,16 @@
 -about:config in Firefox
 -search for "scroll" in the filter and set "middlemouse.scrollbarPosition" to true
 
+5. To get the name of a certain key on the keyboard, use command "xev"
+
+6. Discord updater is kind of broken as of now. What fixed mine was to go to it's config and change:
+"SKIP_HOST_UPDATE": false to "true"
+
+7. To check your battery stat (cool for used Laptops) use:
+~$ upower -e
+~$ upower -i (The path to the Battery, e.g. (...)/BAT_0)
+
+/////////////////////////////////////////////////////////////
 1. Install i3wm-gaps preferably
 add-apt-repository ppa:kgilmer/speed-ricer
 apt-get update
@@ -50,6 +61,7 @@ apt-get install flameshot
 
 3. For laptops, get brightnessctl to change display brightness
 -> https://github.com/Hummer12007/brightnessctl
+-Is aviable through the apt package manager
 
 4.Pulsemixer, cool tty audio control
 -> https://github.com/GeorgeFilipkin/pulsemixer
@@ -60,8 +72,8 @@ apt-get install pavucontrol
 6. Cava, cool tty audio visualizer
 -> https://github.com/karlstav/cava
 
-6.1 (If interested, get Tauon, cool music player)(Is a flatpack!)
--> https://github.com/Taiko2k/TauonMusicBox
+6.1 (If interested, get Amberol, cool music player)(Is a flatpack!)
+-> https://gitlab.gnome.org/World/amberol
 
 7. Get feh, best image viewer
 apt-get install feh
@@ -69,8 +81,7 @@ apt-get install feh
 8. Epic borderless video player that can even stream videos from YT (Dependency: youtube-dl)
 apt-get install mpv 
 
-9. youtube-dl
-https://github.com/ytdl-org/youtube-dl
+9. yt-dlp for downloading youtube videos lol
 
 10.a Compton (Compositor) a must have!
 apt-get install compton
@@ -83,6 +94,8 @@ OR
 -Create directory .config/picom
 -Shove the dotfile for picom into the directory
 
+OR
+
 10.b For founded Corners use Jonaburgs' fork:
 https://github.com/jonaburg/picom
 
@@ -94,6 +107,7 @@ apt-get install neofetch
 
 13. Ranger tty file browser
 https://github.com/ranger/ranger
+-Ranger can be installed by the apt package manager
 (Note for displaying images in terminal:
 -Notice the .rc config file for Ranger.
 -Also needs a tty emulator like kitty or alacritty that can utilize w3m
@@ -113,6 +127,33 @@ sudo nvidia-xconfig --cool-bits=4
 16. There is currently no Github desktop for Linux, but shiftkey has an absolute epic fork for Linux
 https://github.com/shiftkey/desktop
 
+17. Get Polybar for maximum Bar-Configuration:
+https://github.com/polybar/polybar
+-If you cannot see your battery status even with the battery module,
+change "Battery = (Whatever it says here)" to "Battery = BAT1" and "adapter = ADP1"
+
+18. Get Polybar Themes for cool themes
+https://github.com/adi1090x/polybar-themes
+
+17. Get polybar cmus module if you like
+https://github.com/raytruong/polybar-cmus
+
+18. To use a VPN, you can use OpenVPN with the Network manager plugin.
+OpenVPN is then being managed and used through the Ubuntu Network manager and does not need
+a Client GUI like on WIndows
+https://askubuntu.com/questions/187511/how-can-i-use-a-ovpn-file-with-network-manager
+
+19. Remmina is used to establish an RDP connection from Linux to WIndows
+https://wiki.ubuntuusers.de/Remmina/
+
+20. For Bluetooth on a Tiling Window manager, use blueman:
+https://wiki.ubuntuusers.de/Bluetooth/Blueman/
+
+21. To have animated wallpapers, use xwinwrap:
+https://github.com/ujjwal96/xwinwrap
+And put this in your config:
+exec_always xwinwrap -ov -fs -ni -s -nf -b -un -- mpv --loop --no-audio -wid WID /home/path/to/your_images/yourgif.gif (or a even a video).
+notice the -ov flag. super important to cast mpv or gifview onto your very desktop under all the other windows
 
 /////////////////////////Speed GPU passthrough summary for maximum fastness//////////////////////////////
 
